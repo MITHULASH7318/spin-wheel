@@ -1,0 +1,111 @@
+/* General styling for the slot machine container */
+.slot-machine-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e2b3a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.reel {
+  background-color: #fff;
+  border: 3px solid #ffca28;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Animation effect for each reel */
+.reel:hover {
+  transform: rotate(10deg);
+  box-shadow: 0px 0px 15px rgba(255, 202, 40, 0.8);
+}
+
+/* Spin button styling */
+button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e64a19;
+}
+
+.rewards {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  margin-top: 20px;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.rewards h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.rewards ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rewards li {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.rewards li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .reel {
+    width: 80px;
+    height: 80px;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+
+  .rewards {
+    width: 80%;
+  }
+
+  .rewards li {
+    font-size: 1em;
+  }
+}
